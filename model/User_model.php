@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '/../database/database.php');
+require_once(__DIR__ . '/../database/DB.php');
 require_once(__DIR__ . '/../controller/Security.php');
 
 class User_model{
@@ -10,7 +10,7 @@ class User_model{
 
         if(User_model::info_user_login($login_safe) == false){
             $password_hash = password_hash($password_safe, PASSWORD_BCRYPT);
-            $req = "INSERT INTO users (login, password, rights) VALUES (:login, :email, :password, 0)";
+            $req = "INSERT INTO users (login, password, rights) VALUES (:login, :password, 0)";
             $stmt = Database::connect_db()->prepare($req);
             $stmt->execute(array(
                 ":login" => $login_safe,

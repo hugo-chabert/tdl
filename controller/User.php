@@ -5,10 +5,7 @@ require_once(__DIR__ . '/Security.php');
 
 class User{
 
-    public $id;
-
-    public function __construct($id){
-        $this->id = $id;
+    public function __construct(){
         $this->User_model = new User_model();
     }
 
@@ -22,7 +19,7 @@ class User{
         $this->User_model->sql_register($login, $password);
     }
 
-    public function conection($login, $password){
+    public function connection($login, $password){
         $this->User_model->sql_connection($login, $password);
     }
 
