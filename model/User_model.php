@@ -48,7 +48,7 @@ class User_model{
                 exit();
             }
         }
-        elseif(Register::info_user_login($login) == false){
+        elseif(User_model::info_user_login($login) == false){
             Toolbox::addMessageAlert("Login incorrect.", Toolbox::RED_COLOR);
             header("Location: ./index.php");
             exit();
