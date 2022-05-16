@@ -51,33 +51,37 @@ if(Security::isConnect()){
 <body>
     <?php require_once(__DIR__ . '/view/header.php'); ?>
     <main>
-        <form action="" method="post">
-            <fieldset>
-                <legend>Connectez-vous</legend>
-                <label for ="loginC">Login :</label>
-                <input id="loginC" type="text" name="loginC" placeholder="Login" />
-
-                <label for ="passwordC">  Mot de passe :</label>
-                <input id="passwordC" type="password" name="passwordC" placeholder="Mot de passe" />
-            </fieldset>
-            <button type="submit" name="connection">Connexion</button>
-        </form>
-
-        <form action="" method="post">
-            <fieldset>
-                <legend>Creer un compte</legend>
-                <label for ="loginR">Login :</label>
-                <input id="loginR" type="text" name="loginR" placeholder="Login" />
-
-                <label for ="passwordR">  Mot de passe :</label>
-                <input id="passwordR" type="password" name="passwordR" placeholder="Mot de passe" />
-
-                <label for ="conf-password">Confirmez le mot de passe :</label>
-                <input id="conf-password" type="password" name="conf-password" placeholder="Confirmez le mot de passe" />
-            </fieldset>
-            <button type="submit" name="register">Creer un compte</button>
-        </form>
-    <?php require_once(__DIR__ . '/view/errors.php'); ?>
+        <div class="container">
+            <div class="container-fieldset">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Connectez-vous</legend>
+                        <label for ="loginC">Login :</label>
+                        <input id="loginC" type="text" name="loginC" placeholder="Login" />
+                        <br>
+                        <label for ="passwordC">  Mot de passe :</label>
+                        <input id="passwordC" type="password" name="passwordC" placeholder="Mot de passe" />
+                        <button type="submit" name="connection">Connexion</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container-fieldset">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Creer un compte</legend>
+                        <label for ="loginR">Login :</label>
+                        <input id="loginR" type="text" name="loginR" placeholder="Login" />
+                        <br>
+                        <label for ="passwordR">  Mot de passe :</label>
+                        <input id="passwordR" type="password" name="passwordR" placeholder="Mot de passe" />
+                        <br>
+                        <label for ="conf-password">Confirmez le mot de passe :</label>
+                        <input id="conf-password" type="password" name="conf-password" placeholder="Confirmez le mot de passe" />
+                        <button type="submit" name="register">Creer un compte</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </main>
     <?php require_once(__DIR__ . '/view/footer.php'); ?>
 </body>
