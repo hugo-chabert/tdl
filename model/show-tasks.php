@@ -15,7 +15,7 @@ if($result == true){
     ?>
 
     <li>
-        <span class="text"><?php echo $row['text']; ?></span>
+        <span class="text"><?php echo $row['text']."<br>".$row['date']; ?></span>
         <i id="removeBtn" class="icon fa fa-trash" data-id="<?php echo $row['id']; ?>"></i>
     </li>
 
