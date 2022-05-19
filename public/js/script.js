@@ -25,9 +25,6 @@ document.addEventListener("DOMContentLoaded", function (){
             success: function(data) {
                 loadTasks();
                 $("#taskValue").val('');
-                if (data == 0) {
-                    alert("Il y a un problème. Réessayez.");
-                }
             }
         });
     });
@@ -42,9 +39,6 @@ document.addEventListener("DOMContentLoaded", function (){
             data: {id: id},
             success: function(data) {
                 loadTasks();
-                if (data == 0) {
-                    alert("Il y a un problème. Réessayez.");
-                }
             }
         });
     });

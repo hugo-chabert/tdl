@@ -14,7 +14,8 @@ $stmt->execute(array(
     ":task" => $task,
     ':user_id' => $user_id
 ));
-$result = $stmt->query(PDO::FETCH_ASSOC);
+
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if ($result) {
     echo 1;
