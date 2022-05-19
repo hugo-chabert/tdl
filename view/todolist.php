@@ -27,16 +27,19 @@ if(!Security::isConnect()){
 <body>
     <?php require_once(__DIR__ . '/header.php'); ?>
     <main>
-        <div class="wrapper">
-            <h2 class="title">ToDoList</h2>
-            <div class="inputFields">
-                <input type="text" id="taskValue" placeholder="Enter a task.">
-                <button type="submit" id="addBtn" class="btn"><i class="fa fa-plus"></i></button>
-            </div>
-            <div class="content">
-                <ul id="tasks">
+    <?php require_once(__DIR__ . '/errors.php'); ?>
+        <div class="container">
+            <div class="wrapper">
+                <h2 class="title">ToDoList</h2>
+                <div class="inputFields">
+                    <input type="text" id="taskValue" placeholder="Enter a task.">
+                    <button type="submit" id="addBtn" class="btn"><i class="fa fa-plus"></i></button>
+                </div>
+                <div class="content">
+                    <ul id="tasks">
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>

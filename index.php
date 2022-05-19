@@ -51,6 +51,7 @@ if(Security::isConnect()){
 <body>
     <?php require_once(__DIR__ . '/view/header.php'); ?>
     <main>
+        <?php require_once(__DIR__ . '/view/errors.php'); ?>
         <div class="container">
             <div class="container-fieldset">
                 <form action="" method="post">
